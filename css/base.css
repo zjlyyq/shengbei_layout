@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-07-24 14:15:10
+ * @version $Id$
+ */
+
+ /*圣杯布局实现方法一*/
+ .container{
+ 	height: 300px;
+ 	padding: 0 200px;
+ }
+.middle{
+	background: #aaa;
+	width: 100%;
+	height: 300px;
+	float: left;
+}
+.left,.right{
+	width: 200px;
+	height: 300px;
+	background: #ddd;
+}
+.left{
+	float: left;
+	margin-left: -100%;
+	position: relative;
+	left: -200px;
+}
+.right{
+	position: relative;
+	right: -200px;
+	float: left;
+	margin-left: -200px;
+}
+/*实现方法二*/
+/*.container{
+ 	height: 300px;
+ 	
+ }
+.middle{
+	background: #aaa;
+	width: 100%;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	padding: 0 200px;
+}
+.left,.right{
+	width: 200px;
+	height: 300px;
+	background: #ddd;
+}
+.left{
+	float: left;
+	margin-left: -100%;
+}
+.right{
+	float: left;
+	margin-left: -200px;
+}*/
